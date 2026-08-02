@@ -58,12 +58,12 @@ export const Gallery: React.FC = () => {
       {/* Horizontal scroll container */}
       <div 
         ref={scrollContainerRef}
-        className="flex gap-8 md:gap-12 px-4 md:px-12 lg:w-max lg:flex-nowrap flex-wrap relative z-10"
+        className="flex gap-6 md:gap-10 px-4 sm:px-6 md:px-12 lg:w-max lg:flex-nowrap flex-wrap relative z-10"
       >
         {images.map((src, idx) => (
           <div 
             key={idx} 
-            className="w-[calc(100vw-2rem)] md:w-[400px] lg:w-[30vw] h-[60vh] lg:h-[60vh] shrink-0 overflow-hidden group hover-target border p-2 border-white/10 rounded-[40px]"
+            className="w-[calc(100vw-2rem)] sm:w-[calc(100vw-3rem)] md:w-[420px] lg:w-[30vw] h-[52vh] md:h-[58vh] lg:h-[60vh] shrink-0 overflow-hidden group hover-target border p-2 border-white/10 rounded-[40px]"
           >
             <div className="w-full h-full rounded-[30px] overflow-hidden relative">
               <img 

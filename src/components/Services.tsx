@@ -97,20 +97,20 @@ export const Services: React.FC = () => {
   };
 
   return (
-    <section ref={containerRef} className="py-24 md:py-32 px-4 md:px-12 max-w-7xl mx-auto bg-cream">
-      <div className="flex flex-col md:flex-row gap-12 lg:gap-24">
+    <section ref={containerRef} className="py-20 md:py-24 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto bg-cream">
+      <div className="flex flex-col lg:flex-row gap-10 md:gap-12 lg:gap-24">
         
         {/* Services List */}
         <div className="w-full md:w-1/2 flex flex-col gap-0 border-t border-charcoal/20">
           <div className="py-8">
-            <span className="text-[11px] uppercase tracking-[0.4em] text-rosegold font-bold mb-4 block">The Art of Radiance</span>
-            <h2 className="text-4xl md:text-6xl font-serif text-charcoal mb-4 italic">Our Services</h2>
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.4em] text-rosegold font-bold mb-4 block">The Art of Radiance</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal mb-4 italic">Our Services</h2>
           </div>
           {services.map((service, index) => (
             <div 
               key={service.id}
               ref={(el) => { itemsRef.current[index] = el; }}
-              className="group cursor-none border-b border-charcoal/20 py-8 hover-target flex flex-col justify-between hover:bg-rosegold/10 transition-colors px-6"
+              className="group cursor-none border-b border-charcoal/20 py-6 sm:py-8 hover-target flex flex-col justify-between hover:bg-rosegold/10 transition-colors px-4 sm:px-6"
               onMouseEnter={() => handleMouseEnter(service.image)}
             >
               <div className="flex items-baseline gap-6 mb-4">
@@ -125,7 +125,7 @@ export const Services: React.FC = () => {
         </div>
 
         {/* Hover Image Display */}
-        <div className="hidden md:block w-full md:w-1/2 relative h-[700px]">
+        <div className="hidden lg:block w-full md:w-1/2 relative h-[630px] lg:h-[700px]">
           <div className="sticky top-24 w-full h-full p-6">
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(var(--color-rosegold) 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
             <div className="w-full h-full border border-rosegold/40 rounded-t-[200px] rounded-b-xl overflow-hidden relative bg-blush p-4 flex flex-col items-center justify-center">

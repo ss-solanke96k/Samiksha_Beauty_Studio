@@ -4,8 +4,8 @@ export const Nav: React.FC = () => {
   const [imgError, setImgError] = useState(false);
 
   return (
-    <nav className="h-20 w-full flex items-center justify-between px-6 md:px-12 border-b border-rosegold/30 fixed top-0 left-0 z-50 bg-cream/90 backdrop-blur-md text-charcoal">
-      <div className="hidden md:flex gap-8 text-[11px] uppercase tracking-[0.2em] font-medium opacity-70">
+    <nav className="h-20 md:h-24 w-full flex items-center justify-between px-4 md:px-12 border-b border-rosegold/30 fixed top-0 left-0 z-50 bg-cream/90 backdrop-blur-md text-charcoal">
+      <div className="hidden md:flex gap-6 md:gap-8 text-[10px] md:text-[11px] uppercase tracking-[0.2em] font-medium opacity-70">
         <a href="#" className="hover-target hover:text-rosegold transition-colors">Services</a>
         <a href="#" className="hover-target hover:text-rosegold transition-colors">Portfolio</a>
       </div>

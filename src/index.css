@@ -16,6 +16,14 @@
     cursor: none;
     overflow-x: hidden;
   }
+
+  @media (hover: none) {
+    body,
+    a,
+    button {
+      cursor: auto;
+    }
+  }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
